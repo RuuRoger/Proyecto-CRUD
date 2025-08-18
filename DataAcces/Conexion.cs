@@ -14,7 +14,7 @@ public class Conexion
         _cadenaSQL = configuration.GetConnectionString("CadenaSQL");
     }
 
-    public string GetCadetaSQL()
+    public string GetCadenaSQL()
     {
         return _cadenaSQL;
     }
