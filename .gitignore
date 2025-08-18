@@ -1,0 +1,47 @@
+# Archivos de compilación
+bin/
+obj/
+
+# Archivos de usuario de Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos de configuración locales
+.vs/
+launchSettings.json
+
+# Archivos de paquetes NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Archivos de logs
+*.log
+
+# Archivos de sistema
+Thumbs.db
+Desktop.ini
+
+# Archivos de configuración de Rider y JetBrains
+.idea/
+*.sln.iml
+
+# Archivos de configuración de VS Code
+.vscode/
+
+# Archivos de dependencias de librerías
+wwwroot/lib/
+
+# Archivos de base de datos locales
+*.mdf
+*.ldf
+
+# Otros
+*.dbmdl
+*.bak
+*.sql
