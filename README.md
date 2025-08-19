@@ -4,10 +4,10 @@ This is a self-taught project that demonstrates how to connect to an existing SQ
 An ASP.NET Core project was created to link the database using Entity Frameworks. Since the table already existed, no migrations were necessary.
 
 ## Technologies Used ✨
-ASP.NET Core 9.0
-Visual Studio Code
-Entity Framework Core 9.0
-SQL Server 2022
+- ASP.NET Core 9.0
+- Visual Studio Code
+- Entity Framework Core 9.0
+- SQL Server 2022
 
 ## Project Status ✅
 This project is currently complete.
