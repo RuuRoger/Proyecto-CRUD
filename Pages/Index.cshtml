@@ -1,10 +1,28 @@
 ﻿@page
-@model IndexModel
+@model Proyecto_CRUD.Pages.IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Mi CRUD";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>Lista de contactos</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var contacto in Model.Contactos)
+        {
+            <tr>
+                <td>@contacto.IdContacto</td>
+                <td>@contacto.Nombre</td>
+                <td>@contacto.Telefono</td>
+                <td>@contacto.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>

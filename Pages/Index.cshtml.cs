@@ -1,19 +1,22 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Proyecto_CRUD.DataAcces;
+using Proyecto_CRUD.Models;
 
 namespace Proyecto_CRUD.Pages;
 
 public class IndexModel : PageModel
 {
-    private readonly ILogger<IndexModel> _logger;
+    private readonly AppDbContext _context;
 
-    public IndexModel(ILogger<IndexModel> logger)
+    public List<ContactoModel> Contactos { get; set; } = new();
+
+    public IndexModel(AppDbContext context)
     {
-        _logger = logger;
+        _context = context;
     }
 
     public void OnGet()
     {
-
+        Contactos = _context.Contactos.ToList();
     }
 }
