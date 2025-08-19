@@ -1,7 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using Proyecto_CRUD.DataAcces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSQL")));
 
 var app = builder.Build();
 
